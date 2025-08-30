@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: yellow;
+  padding: 16px 0;
+}
+
+.form-container {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-container form {
+  max-width: 460px;
+  width: 100%;
+  margin-top: 40px;
+}
+.form-container form input, .form-container form button {
+  display: block;
+  padding: 8px 2px;
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.form-container form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #111;
+  outline: none;
+}
+.form-container form label {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=main.css.map */

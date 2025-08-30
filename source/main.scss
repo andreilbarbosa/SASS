@@ -1,0 +1,48 @@
+@use 'configs/reset';
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: yellow;
+    padding: 16px 0;
+}
+
+@mixin elementoForm(){
+    display: block;
+    padding: 8px 2px;
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-container{
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    form{
+        max-width: 460px;
+        width: 100%;
+        margin-top: 40px;
+        
+        input, button{
+            @include elementoForm();
+        }
+        input{
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #111;
+            outline: none;
+        }
+        label{
+            font-size: 18px;
+        }
+    }
+}
